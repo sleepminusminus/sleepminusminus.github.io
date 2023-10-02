@@ -1,0 +1,71 @@
+body {
+    background-color: antiquewhite;
+    margin: 0pt;
+    background-image: url("images/background.jpg");
+    background-position: center;
+    z-index: 0;
+}
+
+a {
+    text-decoration: none;
+    color:darkred;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+#wrapper {
+    box-sizing: border-box;
+    width: 8.5in;
+    margin: auto;
+}
+
+#banner {
+    background-color: rgba(0,0,0,0.7);
+    padding: 0.5in;
+    color: white;
+    font-family: "Roboto Condensed";
+    font-size: x-large;
+}
+
+#content {
+    padding-top: 20pt;
+    padding-bottom: 20pt;
+    background-color: rgba(255, 255, 255, 0.95);
+    height: 100%;
+}
+
+#content h1 {
+    text-align: center;
+    padding: 50pt 0pt;
+    font-size: xxx-large;
+    font-family: 'Roboto Condensed';
+    color:white;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#content p, ul {
+    padding-right: 1in;
+    line-height: 225%;
+    margin: 0%;
+    font-size: large;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+#content p {
+    padding-left: 1in;
+    text-indent: .5in;
+}
+
+#content ul {
+    padding-left: 1.5in
+}
+
+#content img {
+    padding-top: 24pt;
+    padding-bottom: 24pt;
+    width: 80%;
+    display:block;
+    margin:auto;
+}
