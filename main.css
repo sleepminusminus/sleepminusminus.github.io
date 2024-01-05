@@ -1,0 +1,30 @@
+* {
+    color: white;
+    font-family: "Merriweather", serif;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+body {
+    background-color: rgb(31, 31, 31);
+}
+
+a {
+    color: #5a96e0;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight:bold;
+}
+
+button {
+    background-color: rgb(31, 31, 31);
+}
+
+main {
+    max-width: 700px;
+    margin: .2in auto .2in auto;
+    padding: 0px .2in;
+    position: relative;
+}
