@@ -3,7 +3,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0pt;
-    background-image: url("images/background.jpg");
+    background-image: url("/assets/images/rtch-500/background.jpg");
     background-position: center;
     z-index: 0;
 }

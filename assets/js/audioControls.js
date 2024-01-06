@@ -32,8 +32,8 @@ $("#bg-music-button").click(function(event) {
     updateButton()
 })
 
-audioWithAutoplay = '<audio controls autoplay><source src="https://listen.moe/fallback" type="audio/mpeg"></audio>'
-audioWithoutAutoplay = '<audio controls><source src="https://listen.moe/fallback" type="audio/mpeg"></audio>'
+audioWithAutoplay = '<audio volume="0.5" controls autoplay><source src="https://listen.moe/fallback" type="audio/mpeg"></audio>'
+audioWithoutAutoplay = '<audio volume="0.5" controls><source src="https://listen.moe/fallback" type="audio/mpeg"></audio>'
 
 updateButton()
 autoplay = getAutoplay()
