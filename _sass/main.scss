@@ -1,0 +1,48 @@
+html, button {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    font-family: "Merriweather", serif;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+/* I use .2 inches as a vestige of my formatting from Google Docs. */
+main {
+    min-width: 400px;
+    max-width: 700px;
+    margin: .2in auto .2in auto;
+    padding: 0px .2in;
+    position: relative;
+}
+
+h1, h2 {
+    line-height: 1.6rem;
+}
+
+a {
+    color: #5a96e0;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight:bold;
+}
+
+li {
+    margin: 5px;
+}
+
+/* Syntax highlighting for code */
+code {
+    font-family: 'Consolas', monospace;
+}
+.highlight pre {
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 1px 5px;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
