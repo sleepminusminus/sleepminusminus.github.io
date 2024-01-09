@@ -34,8 +34,6 @@ github_username:  "sleepminusminus"
 kramdown:
   syntax_highlighter: rouge
 
-plugins: [jekyll-youtube]
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
