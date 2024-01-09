@@ -6,7 +6,15 @@ useMathJax: true
 
 A few days ago I came across this video:
 
-{% youtube "https://www.youtube.com/watch?v=bE5_kqdSdeo" %}
+<div class="youtube-video-wrapper">
+    <iframe class="youtube-video"
+        src="https://www.youtube.com/embed/bE5_kqdSdeo?si=DzZgS_StBFNrOuNC"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+</div>
 
 To provide a brief summary, 381,654,729 is the only number with all the digits
 from 1 to 9 that allows you to form a number divisible by any digit, 1 through
