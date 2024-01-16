@@ -21,6 +21,11 @@ body {
     min-height: 100vh;
 }
 
+main {
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+
 footer {
     position: absolute;
     box-sizing: border-box;
