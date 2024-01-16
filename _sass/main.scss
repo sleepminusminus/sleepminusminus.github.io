@@ -12,17 +12,18 @@ html, button {
 }
 
 body {
-    min-width: 400px;
-    max-width: 700px;
-    box-sizing: border-box;
     margin: 0px auto;
+    box-sizing: border-box;
     padding: .2in 0px $footer-height 0px;
     position: relative;
     min-height: 100vh;
 }
 
 main {
+    min-width: 400px;
+    max-width: 700px;
     box-sizing: border-box;
+    margin: 0px auto;
     padding: 0px 10px;
 }
 
