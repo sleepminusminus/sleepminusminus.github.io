@@ -8,7 +8,9 @@
     background-color: #1d1f2bf0;
     box-shadow: 0px 0px 10px black;
     border-radius: 25px;
-    color: #ff015b;
+    transition: width 0.5s ease-in-out;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #player:hover {
@@ -25,17 +27,30 @@
     position: absolute;
     top: 9px;
     left: 19px;
+    color: white;
     font-size: 1.2rem;
 }
 
-#player-creds {
-    display: none;
+#player-artist-name {
     position: absolute;
-    top: 11px;
-    left: 48px;
-    font-size: 1rem;
+    top: 2px;
+    left: 51px;
+    color: #ff015b;
+    font-size: 0.8rem;
 }
 
-#player:hover #player-creds {
-    display: block;
+#player-song-name {
+    position: absolute;
+    top: 20px;
+    left: 51px;
+    font-size: 1rem;
+    color: white;
+}
+
+#player-logo {
+    position:absolute;
+    top: 10px;
+    left: 200px;
+    width: 30px;
+    height: 30px;
 }
