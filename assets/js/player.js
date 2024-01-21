@@ -2,7 +2,6 @@ let heartbeatInterval;
 let ws;
 let artistNameDisplay;
 let songNameDisplay;
-let playButton;
 let playing = false;
 
 function onPlayButtonClick(event) {
@@ -94,9 +93,9 @@ function connect() {
 }
 
 $(document).ready(() => {
-    playButton = $("#player-play-button i").addClass("fa-solid fa-play");
+    let playButton = $("#player-play-button i").addClass("fa-solid fa-play");
 
-    playButton.click(onPlayButtonClick);
+    playButton.on("click", onPlayButtonClick);
 
     artistNameDisplay = $("#player-artist-name");
     songNameDisplay = $("#player-song-name");
