@@ -1,13 +1,16 @@
+(() => {
+
+const NAME_MAX_LENGTH = 150;
+const SCROLL_DAMPENING = 2;
+
+let audio;
 let heartbeatInterval, ws;
 let artistNameDisplay, songNameDisplay;
 let root;
 let playing = false;
-const NAME_MAX_LENGTH = 100;
-const SCROLL_DAMPENING = 2;
 
 function onPlayButtonClick(event) {
     let button = $(event.target);
-    let audio = $("#player-audio")[0]
 
     if(playing) {
         audio.pause();
@@ -17,6 +20,11 @@ function onPlayButtonClick(event) {
     }
     button.toggleClass("fa-play fa-pause");
     playing = !playing;
+}
+
+function onVolumeChange(event) {
+    let value = $(event.target).val();
+    audio.volume = value;
 }
 
 function updateArtistAndSong(data) {
@@ -98,11 +106,18 @@ function connect() {
 
 $(document).ready(() => {
     let playButton = $("#player-play-button i").addClass("fa-solid fa-play");
+    let volumeSlider = $("#player-volume-slider");
+
+    audio = $("#player-audio")[0]
+    audio.volume = 0.5;
 
     playButton.on("click", onPlayButtonClick);
+    volumeSlider.on("input", onVolumeChange);
 
     root = document.querySelector(":root")
     artistNameDisplay = $("#player-artist-name");
     songNameDisplay = $("#player-song-name");
     connect();
 });
+
+})();
