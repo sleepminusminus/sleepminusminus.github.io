@@ -1,8 +1,9 @@
-let heartbeatInterval;
-let ws;
-let artistNameDisplay;
-let songNameDisplay;
+let heartbeatInterval, ws;
+let artistNameDisplay, songNameDisplay;
+let root;
 let playing = false;
+const NAME_MAX_LENGTH = 100;
+const SCROLL_DAMPENING = 2;
 
 function onPlayButtonClick(event) {
     let button = $(event.target);
@@ -23,18 +24,21 @@ function updateArtistAndSong(data) {
     let artistText = artists.join(", ");
     let songText = data.song.title;
 
-    // Replace the text of the displays with the artist and song.
-    // If the display is too long, chop off a letter, add dots, 
-    // and repeat until the text fits within the player.
-    do {
-        artistNameDisplay.text(artistText);
-        artistText = artistText.replace(/\.+$/, "").slice(0, -1) + "...";
-    } while(artistNameDisplay.outerWidth() > 160)
+    artistNameDisplay.text(artistText);
+    songNameDisplay.text(songText);
+    
+    let artistScrollRaw = NAME_MAX_LENGTH - artistNameDisplay.prop("scrollWidth");
+    let artistScroll = artistScrollRaw < 0 ? artistScrollRaw : 0;
+    let artistScrollTime = Math.abs(SCROLL_DAMPENING * artistScroll / 100);
 
-    do {
-        songNameDisplay.text(songText);
-        songText = songText.replace(/\.+$/, "").slice(0, -1) + "...";
-    } while(songNameDisplay.outerWidth() > 160)
+    let songScrollRaw = NAME_MAX_LENGTH - songNameDisplay.prop("scrollWidth");
+    let songScroll = songScrollRaw < 0 ? songScrollRaw : 0;
+    let songScrollTime = Math.abs(SCROLL_DAMPENING * songScroll / 100);
+
+    root.style.setProperty("--artist-scroll", artistScroll + "px");
+    root.style.setProperty("--artist-scroll-time", artistScrollTime + "s");
+    root.style.setProperty("--song-scroll", songScroll + "px");
+    root.style.setProperty("--song-scroll-time", songScrollTime + "s");
 }
 
 function _sendHeartbeat() {
@@ -97,6 +101,7 @@ $(document).ready(() => {
 
     playButton.on("click", onPlayButtonClick);
 
+    root = document.querySelector(":root")
     artistNameDisplay = $("#player-artist-name");
     songNameDisplay = $("#player-song-name");
     connect();

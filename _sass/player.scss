@@ -1,3 +1,10 @@
+:root {
+    --artist-scroll: 0px;
+    --artist-scroll-time: 0s;
+    --song-scroll: 0px;
+    --song-scroll-time: 0s
+}
+
 #player {
     box-sizing: border-box;
     position: fixed;
@@ -31,20 +38,50 @@
     font-size: 1.2rem;
 }
 
-#player-artist-name {
+#player-artist-name-container {
     position: absolute;
+    overflow: hidden;
     top: 2px;
     left: 51px;
+    width: 100px;
     color: #ff015b;
     font-size: 0.8rem;
 }
 
-#player-song-name {
+#player-song-name-container {
     position: absolute;
+    overflow: hidden;
     top: 20px;
     left: 51px;
-    font-size: 1rem;
+    width: 100px;
     color: white;
+    font-size: 1rem;
+}
+
+#player-artist-name:hover {
+    animation: scrollArtist var(--artist-scroll-time) linear 0s 1 forwards;
+}
+
+#player-song-name:hover {
+    animation: scrollSong var(--song-scroll-time) linear 0s 1 forwards;
+}
+
+@keyframes scrollArtist {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX( var(--artist-scroll));
+    }
+}
+
+@keyframes scrollSong {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX( var(--song-scroll));
+    }
 }
 
 #player-logo {
