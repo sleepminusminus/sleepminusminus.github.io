@@ -95,6 +95,17 @@ pre {
     word-wrap: break-word;
 }
 
+table {
+    margin: auto;
+}
+
+table, th, td {
+    padding: 2px 5px;
+    border: 2px white solid;
+    text-align: center;
+    border-collapse: collapse;
+}
+
 /* code to keep youtube video aspect ratio. 
 modified from https://stackoverflow.com/questions/1495407/maintain-the-aspect-ratio-of-a-div-with-css/ */ 
 
