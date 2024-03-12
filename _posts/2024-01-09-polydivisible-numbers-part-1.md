@@ -25,7 +25,8 @@ first six digits) is divisible by 6 (3 $$\times$$ 63609).
 This property is actually quite difficult to prove; when I first watched that
 video I did [some scribbling](/assets/images/381654729-attempted-proof.png)
 in a Google Keep note but didn't get far. If you're interested in a proof,
-though this result, ProofWiki has [a great article](https://proofwiki.org/wiki/Polydivisible_Number/Examples/381,654,729")
+though, of this result, ProofWiki has
+[a great article](https://proofwiki.org/wiki/Polydivisible_Number/Examples/381,654,729)
 on the subject.
 
 In this series, I'll post on some interesting facts I've come across in my
