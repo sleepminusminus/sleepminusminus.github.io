@@ -35,7 +35,7 @@ it's a little easier for me to discuss the topic. Then we'll discuss
 transpositions and how they might help prove the divisibility properties of our
 number.
 
-<h2>Establishing terminology</h2>
+## Establishing terminology
 
 First, we'll use the term <span class="point">pandigital</span> to refer to
 numbers that have all digits 1-9 only once.<span class="note-wrapper"><span class="note">
@@ -73,7 +73,7 @@ $$[x_1 x_2 \ldots x_n]$$
 
 These conventions will make the following discussion flow a bit better.
 
-<h2>Transpositions defined</h2>
+## Transpositions defined
 
 In the comments of the video above, [@isaiahos.](https://www.youtube.com/channel/UC-JSKreqwJwQpu-OXjP2J1A)
 makes an astute observation: looking at the number 381,654,729, you can see that
@@ -96,7 +96,7 @@ applying the previous transposition $$(1 \ 2)$$ to this list would give us the
 new number 213,456,789. Moreover, our magic number would be represented by the
 transpositions $$(1 \ 3)(2 \ 8)(4 \ 6)$$.
 
-<h2>Do transpositions actually help us?</h2>
+## Do transpositions actually help us?
 
 Is there something significant to this way of representing pandigital numbers?
 I'm not sure. If there was some way to encode properties about divisibility into
@@ -129,7 +129,7 @@ the solution has an even number of transpositions. My only worry is that this
 particular case is a little too specific to benefit from the use of
 transpositions. But I'll keep thinking about it.
 
-<h2>Looking forward</h2>
+## Looking forward
 
 My next post on this topic will address the question of pandigital numbers in
 bases other than 10. Can we say more about pandigital and polydivisible numbers
