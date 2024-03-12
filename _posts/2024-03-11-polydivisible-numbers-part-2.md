@@ -191,7 +191,7 @@ which I think motivated most people to take up this puzzle.
 that lists it as a unique problem.
 * [ProofWiki's proof](https://proofwiki.org/wiki/Polydivisible_Number/Examples/381,654,729)
 of the result, which is also a great place to start.
-* [Travis Dillon's short paper](https://www.parabola.unsw.edu.au/files/articles/2010-2019/volume-53-2017/issue-1/vol53_no1_3.pdf) 
+* [Travis Dillon's short paper](https://www.parabola.unsw.edu.au/files/articles/2010-2019/volume-53-2017/issue-1/vol53_no1_3.pdf)
 on the puzzle in other bases. It's very comprehensive and helped me fill in the
 details of my $$n-1$$ digit sum divisibility proof.
 * [Skirtle's article](https://skirtlesden.com/articles/pandigital-polydivisible-numbers),

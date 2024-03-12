@@ -10,20 +10,19 @@ Meta
 
 * Create a table of contents include to generate a ToC for any article it's
 included in using the headers
-* Create css for footnotes: ideally we'd be able to just type {% highlight html %}
-<footnote>the text of our footnote</footnote>{% endhighlight %}
+* ~~Create css for footnotes~~ **Will be migrating away from footnotes for
+stylistic and accessibility reasons**
 * Migrate index.html to index.md
-* Finish migrating posts
+* ~~Finish migrating posts~~
   * ~~Baptism post~~ ✅
-  * RTCH 500 post
 
 Math
 ----
 
-* Article on 381654729: proof, musings, additional resources
-  * [Original YouTube video](https://www.youtube.com/watch?v=bE5_kqdSdeo)
-  * [ProofWiki article](https://proofwiki.org/wiki/Polydivisible_Number/Examples/381,654,729)
-  * Include the Numberphile video
+* ~~Article on 381654729: proof, musings, additional resources~~
+  * ~~[Original YouTube video](https://www.youtube.com/watch?v=bE5_kqdSdeo)~~
+  * ~~[ProofWiki article](https://proofwiki.org/wiki/Polydivisible_Number/Examples/381,654,729)~~
+  * ~~Include the Numberphile video~~
 * Article on $\frac{1}{x+y}=\frac{1}{x}+\frac{1}{y}$
   * [Original video](https://www.youtube.com/watch?v=eqqKx1s7Iak&t=2s)
   * Desmos graph
@@ -32,12 +31,6 @@ Math
   (2) arguments with a difference of $\frac{2\pi}{3}$ radians
 * Article on 6174: proof, musings, additional resources
   * [Original YouTube video](https://www.youtube.com/shorts/w0v99WLbmhA)
-
-Big Thoughts ©️
---------------
-
-* New Years resolutions and earning grace? I feel like this has been written
-before but I feel I could do a little more of a winsome spin on it
 
 Anime
 -----
